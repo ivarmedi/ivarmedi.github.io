@@ -13,3 +13,8 @@ layout: default
   </div>
 
 </article>
+
+<div class="nav">
+  <a href="{{ page.previous.url }}">{% if page.previous.url %}&#171; {{ page.previous.title }}{% endif %}</a>
+  <a href="{{ page.next.url }}">{% if page.next.url %}{{ page.next.title }} &#187;{% endif %}</a>
+</div>
